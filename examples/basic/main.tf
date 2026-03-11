@@ -1,7 +1,7 @@
 
 module "mod_app_service_environment" {
   source = "../.."
-  #source  = "azurenoops/overlays-app-service-environment/azurerm"
+  #source  = "github.com/POps-Rox/tf-az-overlays-appserviceenvironment"
   #version = "~> 1.0"
 
   depends_on = [azurerm_resource_group.ase-rg]
