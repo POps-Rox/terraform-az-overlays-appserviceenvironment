@@ -89,7 +89,7 @@ An effective naming convention assembles resource names by using important resou
 | Name | Version |
 |------|---------|
 | azurenoopsutils | ~> 1.0.4 |
-| azurerm | ~> 3.22 |
+| azurerm | ~> 3.116 |
 ## Modules
 
 | Name | Source | Version |
