@@ -8,9 +8,9 @@
 
 # Azure App Service Environment Overlay Terraform Module
 
-[![Changelog](https://img.shields.io/badge/changelog-release-green.svg)](CHANGELOG.md) [![MIT License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE) [![TF Registry](https://img.shields.io/badge/terraform-registry-blue.svg)](https://registry.terraform.io/modules/azurenoops/overlays-app-service-environment/azurerm/)
+[![Changelog](https://img.shields.io/badge/changelog-release-green.svg)](CHANGELOG.md) [![MIT License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE) [![TF Registry](https://img.shields.io/badge/terraform-registry-blue.svg)](https://registry.terraform.io/modules/POps-Rox/overlays-app-service-environment/azurerm/)
 
-This Overlay terraform module can create a an Azure Service Environment associated with an Application Insights component and manage related parameters (Private Endpoints, etc.) to be used in a [SCCA compliant Network](https://registry.terraform.io/modules/azurenoops/overlays-management-hub/azurerm/latest).
+This Overlay terraform module can create a an Azure Service Environment associated with an Application Insights component and manage related parameters (Private Endpoints, etc.) to be used in a [SCCA compliant Network](https://registry.terraform.io/modules/POps-Rox/overlays-management-hub/azurerm/latest).
 
 ## SCCA Compliance
 
@@ -88,14 +88,14 @@ An effective naming convention assembles resource names by using important resou
 
 | Name | Version |
 |------|---------|
-| azurenoopsutils | ~> 1.0.4 |
+| popsrox-utils | ~> 1.0.4 |
 | azurerm | ~> 3.116 |
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| mod\_azregions | azurenoops/overlays-azregions-lookup/azurerm | ~> 1.0.0 |
-| mod\_scaffold\_rg | azurenoops/overlays-resource-group/azurerm | ~> 1.0.1 |
+| mod\_azregions | POps-Rox/overlays-azregions-lookup/azurerm | ~> 1.0.0 |
+| mod\_scaffold\_rg | POps-Rox/overlays-resource-group/azurerm | ~> 1.0.1 |
 ## Resources
 
 | Name | Type |
@@ -109,7 +109,7 @@ An effective naming convention assembles resource names by using important resou
 | [azurerm_private_dns_zone.ase_dns_zone](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/private_dns_zone) | resource |
 | [azurerm_private_dns_zone_virtual_network_link.ase_vnet_link](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/private_dns_zone_virtual_network_link) | resource |
 | [azurerm_subnet_network_security_group_association.ase-subnet-nsg-association](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/subnet_network_security_group_association) | resource |
-| [azurenoopsutils_resource_name.ase](https://registry.terraform.io/providers/azurenoops/azurenoopsutils/latest/docs/data-sources/resource_name) | data source |
+| [popsrox_resource_name.ase](https://registry.terraform.io/providers/POps-Rox/azutils/latest/docs/data-sources/resource_name) | data source |
 | [azurerm_app_service_environment_v3.ase](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/app_service_environment_v3) | data source |
 | [azurerm_client_config.current](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config) | data source |
 | [azurerm_network_security_group.ase-nsg](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/network_security_group) | data source |
